@@ -16,7 +16,7 @@ const destroyElement = () =>{
           Rearrange element via querySelector
         </button>
         <button onClick={() => updateElement(false)}>
-          Hide second element via reactstate
+          Hide first element via reactstate
         </button>
       { elementShown ? <div id="my-div" style={{backgroundColor: 'teal'}}>1.First element</div> : null }
       <div id="random-container" >

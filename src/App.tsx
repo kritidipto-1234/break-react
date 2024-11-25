@@ -13,7 +13,7 @@ import UseMemoExample from './customHooks/useMemo';
 import Random from './Random.tsx';
 import StateMangement from './globalState';
 import { BreakReact } from './BreakReact.tsx';
-
+import Order from './Order';
 const App: React.FC = () => {
   const [show, setShow] = useState(true);
 
@@ -30,6 +30,7 @@ const App: React.FC = () => {
         {/* <ReduxExample /> */}
         {/* <StateMangement /> */}
         <BreakReact />
+        {/* <Order /> */}
         {/* <Random /> */}
       </>
   );
