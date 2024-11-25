@@ -13,7 +13,7 @@ const destroyElement = () =>{
     return (
       <div id='app' style={{height: '100vh', width: '100vw'}}>
         <button onClick={() => destroyElement()}>
-          Rearrange element via querySelector
+          Rearrange element via vanilla js
         </button>
         <button onClick={() => updateElement(false)}>
           Hide first element via reactstate
