@@ -7,7 +7,7 @@ import { ContextApp } from './useHookContext';
 import { PromiseApp } from './useHookPromise';
 import { WithOptimistic, WithoutOptimistic } from './useOptimistic';
 import { ReduxExample } from './ReduxExample';
-import Example from './Example';
+// import Example from './Example';
 import LazyComponent from './LazyComponent.tsx';
 import UseMemoExample from './customHooks/useMemo';
 import Random from './Random.tsx';

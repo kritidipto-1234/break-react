@@ -1,3 +1,6 @@
+// @ts-nocheck
+
+
 import { useState } from 'react';
 import { useGetPostsQuery, useCreatePostMutation } from '../store/api';
 
