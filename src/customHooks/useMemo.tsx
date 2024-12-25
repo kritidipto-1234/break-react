@@ -25,13 +25,6 @@ export function useMyMemo<T>(factory: () => T, deps: React.DependencyList):T {
     return memoCacheRef.current.value as T;
 }
 
-export function useMyCallback<T extends (...args: unknown[]) => unknown>(
-    callback: T,
-    deps: React.DependencyList
-  ): T {
-    return useMyMemo(() => callback, deps);
-  }
-
 const UseMemoExample: React.FC = () => {
   const [count, setCount] = useState(13);
   const [otherState, setOtherState] = useState(0);

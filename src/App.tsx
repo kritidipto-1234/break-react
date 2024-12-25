@@ -14,6 +14,8 @@ import Random from './Random.tsx';
 import StateMangement from './globalState';
 import { BreakReact } from './BreakReact.tsx';
 import Order from './Order';
+import UseCallbackComparison from './customHooks/useCallback.tsx';
+import ChildrenComponent from './ChildrenComponenet.tsx';
 const App: React.FC = () => {
   const [show, setShow] = useState(true);
 
@@ -23,13 +25,15 @@ const App: React.FC = () => {
         {/* <WithoutOptimistic /> */}
         {/* <WithOptimistic /> */}
         {/* <HOC /> */}
+        {/* <ChildrenComponent /> */}
         {/* <PromiseApp /> */}
         {/* <Example /> */}
         {/* <UseMemoExample /> */}
+        <UseCallbackComparison />
         {/* <LazyComponent /> */}
         {/* <ReduxExample /> */}
         {/* <StateMangement /> */}
-        <BreakReact />
+        {/* <BreakReact /> */}
         {/* <Order /> */}
         {/* <Random /> */}
       </>

@@ -13,6 +13,7 @@ export default [
     rules: {
       'react-hooks/rules-of-hooks': 'error',
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
       'no-extra-semi': 'off',
       'react-hooks/exhaustive-deps': 'error', // Change this to 'error'
       'no-unused-vars': 'off',

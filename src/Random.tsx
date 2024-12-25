@@ -12,11 +12,11 @@ const Random = () => {
         return () => clearInterval(i);
     }, []);
     return <div id="wrapper">
-            {/* { <div id="one">Hello 1</div>}
+            { <div id="one">Hello 1</div>}
             {<div id="two">Hello 2</div>}
             <div id="three">Hello 3</div>
             <div id="four">Hello 4</div>
-            {<div id="five">Hello 5</div>}   */}
+            {<div id="five">Hello 5</div>}  
         </div>
 }
 
