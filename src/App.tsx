@@ -16,6 +16,8 @@ import { BreakReact } from './BreakReact.tsx';
 import Order from './Order';
 import UseCallbackComparison from './customHooks/useCallback.tsx';
 import ChildrenComponent from './ChildrenComponenet.tsx';
+import UseLayoutHook from './useLayoutHook.tsx';
+
 const App: React.FC = () => {
   const [show, setShow] = useState(true);
 
@@ -29,13 +31,14 @@ const App: React.FC = () => {
         {/* <PromiseApp /> */}
         {/* <Example /> */}
         {/* <UseMemoExample /> */}
-        <UseCallbackComparison />
+        {/* <UseCallbackComparison /> */}
         {/* <LazyComponent /> */}
         {/* <ReduxExample /> */}
         {/* <StateMangement /> */}
         {/* <BreakReact /> */}
         {/* <Order /> */}
         {/* <Random /> */}
+        <UseLayoutHook />
       </>
   );
 };
