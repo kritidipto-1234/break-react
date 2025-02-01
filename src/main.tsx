@@ -5,6 +5,7 @@ import App from './App.tsx'
 import { store, toggleTheme, incrementByAmount, ReduxProvider } from './store/reduxStore';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { BrowserRouter } from 'react-router-dom'
 
 const queryClient = new QueryClient()
 
@@ -15,10 +16,10 @@ setInterval(()=>{
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ReduxProvider>
-      <QueryClientProvider client={queryClient}>
-        <App />
-        <ReactQueryDevtools initialIsOpen={true} />
-      </QueryClientProvider>
+        {/* <QueryClientProvider client={queryClient}> */}
+          <App />
+          {/* <ReactQueryDevtools initialIsOpen={true} /> */}
+        {/* </QueryClientProvider> */}
     </ReduxProvider>
   </React.StrictMode>
 )

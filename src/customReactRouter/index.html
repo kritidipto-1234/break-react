@@ -1,0 +1,49 @@
+<!-- for testing out vanilla history api -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><a id="home" href="./home" onclick="handleAnchorClick(event)">home</a></div>
+    <div><a id="about" href="./about" onclick="handleAnchorClick(event)">about</a></div>
+    <h1 id="content"></h1>
+    <div id="timer"></div>
+<script>
+    const history = window.history;
+    function handleAnchorClick(e) {
+        e.preventDefault();
+        customPushState({by:'addstate',url:e.target.href,count:history.state?.count+1 || 0}, '', e.target.href);
+    }
+    
+    function customPushState(state, title, url) {
+        history.pushState(state, title, url);
+        updateUI(state);
+    }
+
+
+    function updateUI() {
+        const route = new URL(window.history.state?.url).pathname;
+        if (route === '/home') {
+            document.getElementById('content').innerHTML = 'home';
+        } else if (route === '/about') {
+            document.getElementById('content').innerHTML = 'about';
+        }
+    }
+
+    window.addEventListener('popstate', (e) => {
+        updateUI();
+        console.log("navigation happened via back or forward",e);
+    });
+
+    let timer = 0;
+    setInterval(() => {
+        timer++;
+        document.getElementById('timer').innerHTML = timer;
+    }, 300);
+
+</script>
+</body>
+</html>

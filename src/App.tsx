@@ -17,29 +17,31 @@ import Order from './Order';
 import UseCallbackComparison from './customHooks/useCallback.tsx';
 import ChildrenComponent from './ChildrenComponenet.tsx';
 import UseLayoutHook from './useLayoutHook.tsx';
+import ReactRouterDemo from './ReactRouterDemo';
 
 const App: React.FC = () => {
   const [show, setShow] = useState(true);
 
   // debugger;
   return (
-      <>
-        {/* <WithoutOptimistic /> */}
-        {/* <WithOptimistic /> */}
-        {/* <HOC /> */}
-        {/* <ChildrenComponent /> */}
-        {/* <PromiseApp /> */}
-        {/* <Example /> */}
-        {/* <UseMemoExample /> */}
-        {/* <UseCallbackComparison /> */}
-        {/* <LazyComponent /> */}
-        {/* <ReduxExample /> */}
-        {/* <StateMangement /> */}
-        {/* <BreakReact /> */}
-        {/* <Order /> */}
-        {/* <Random /> */}
-        <UseLayoutHook />
-      </>
+    <>
+      <ReactRouterDemo />
+      {/* <WithoutOptimistic /> */}
+      {/* <WithOptimistic /> */}
+      {/* <HOC /> */}
+      {/* <ChildrenComponent /> */}
+      {/* <PromiseApp /> */}
+      {/* <Example /> */}
+      {/* <UseMemoExample /> */}
+      {/* <UseCallbackComparison /> */}
+      {/* <LazyComponent /> */}
+      {/* <ReduxExample /> */}
+      {/* <StateMangement /> */}
+      {/* <BreakReact /> */}
+      {/* <Order /> */}
+      {/* <Random /> */}
+      {/* <UseLayoutHook /> */}
+    </>
   );
 };
 
