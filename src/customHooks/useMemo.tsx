@@ -12,6 +12,12 @@ export function useMyMemo<T>(factory: () => T, deps: React.DependencyList):T {
     });
 
     const hasDepsChanged = () => {
+        // Check if lengths are different
+        if (deps.length !== memoCacheRef.current.deps.length) {
+            return true;
+        }
+        
+        // Compare each dependency
         return deps.some((dep, index) => {
             return !Object.is(dep, memoCacheRef.current.deps[index]);
         });
